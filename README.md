@@ -1,5 +1,56 @@
 # Codespaces Clojure template
 
+https://github.com/rorycawley/register/blob/master/README.md
+
+Design in practice https://www.youtube.com/watch?v=c5QF2HjHLSE
+
+Crash course https://www.youtube.com/watch?v=ciGyHkDuPAE
+
+ChatGPT Code https://www.youtube.com/watch?v=gW92DcU1s-U
+
+https://exercism.org/tracks/clojure/exercises/hello-world
+http://clojurescriptkoans.com/
+http://codekata.com/kata/kata01-supermarket-pricing/
+https://4clojure.oxal.org/
+https://practical.li/clojure/introduction/clojure-in-15-minutes/
+https://calva.io/rich-comments/
+https://betweentwoparens.com/blog/rich-comment-blocks/
+
+https://web.mit.edu/6.001/6.037/sicp.pdf
+https://www.sicpdistilled.com/section/1.1.5/
+https://github.com/gregsexton/SICP-Clojure
+https://github.com/istefanis/sicp-clojure
+https://github.com/findmyway/sicp-clojure
+https://github.com/sicp-clojure/book-exercise-solutions
+https://github.com/pyrocat101/sicp
+
+https://bernhardwenzel.com/articles/sicp-chapter-1-1-in-clojure/
+https://bernhardwenzel.com/articles/sicp-chapter-1-2-in-clojure/
+
+https://www.infoq.com/presentations/DDD-Clojure/
+
+REPL Stu https://vimeo.com/223309989
+https://medium.com/swlh/what-i-learned-after-writing-clojure-for-424-days-straight-8884ec471f8e
+https://ericnormand.me/guide/clojure-collections
+
+Building Anki https://www.youtube.com/watch?v=QrSnTIHotZE
+https://www.booleanknot.com/slides/understanding-clojure-through-data.pdf
+https://skillsmatter.com/skillscasts/3556-a-practical-tour-of-clojure-web-development
+https://skillsmatter.com/skillscasts/3445-functional-web
+
+Clojure made simple https://www.youtube.com/watch?v=VSdnJDO-xdg
+Data https://www.youtube.com/watch?v=zznwKCifC1A
+Composing applications https://www.youtube.com/watch?v=7HpI7d3-hpo
+Solving problems the clojure way https://www.youtube.com/watch?v=vK1DazRK_a0
+REPL https://www.youtube.com/watch?v=oTy4JYY3CoQ
+Running with Scissors Stu https://www.youtube.com/watch?v=Qx0-pViyIDU
+
+TDD vs REPL https://medium.com/codex/test-driven-vs-repl-driven-development-809d3c7a681
+Clojure for startups https://www.youtube.com/watch?v=MZy-SNswH2E&t=9s
+REPL https://www.youtube.com/watch?v=gIoadGfm5T8
+Moving to Clojure https://www.youtube.com/watch?v=Gz0-utBC9gE
+https://polylith.gitbook.io/poly
+
 ## Chap 1
 
 ### Concepts from SICP
