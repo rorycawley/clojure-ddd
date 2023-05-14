@@ -1,53 +1,69 @@
 # Codespaces Clojure template
 
-GitHub Codespaces template
+## Chap 1
 
-<br><br><br>
+### Concepts from SICP
 
-Xvfb, lxde, x11vnc, novnc
+Computational **processes** are abstract beings that inhabit computers. As they evolve, processes manipulate other abstract things called **data**.
 
-<br><br><br>
+Processes are the abstract notion of computation or the sequence of steps that transform data. A process is essentially a series of operations that take input and produce output, possibly modifying the input along the way.
 
-x11 check
+In the context of Clojure, a process can be thought of as a sequence of transformations applied to data using **functions**. Clojure embraces a functional programming paradigm, where functions are the primary means of performing computations. These functions take input data and return transformed data **without modifying the original input**.
 
-```
-xeyes
-```
+In Clojure, you can define **a process as a composition of functions**, where each function represents a step in the computation. The output of one function becomes the input for the next, forming a **chain of transformations**. This compositional approach allows you to express complex processes by breaking them down into smaller, reusable functions.
 
-<br>
+```clojure
+(defn square [x]
+  (* x x))
 
-opengl check
-
-```
-glxgears
+(defn square-list [lst]
+  (map square lst))
 ```
 
-<br><br><br>
+In the above code, we define a function square that takes a number x and returns its square. Then, we define square-list, which takes a list lst and applies the square function to each element using the **map** function. This composition of functions represents the process of squaring each number in the list.
 
-https://user-images.githubusercontent.com/10168979/212047336-1bac88ca-9097-4e72-a963-c9882ac4a958.mp4
+You can then call the square-list function with some input data:
 
-https://user-images.githubusercontent.com/10168979/212048069-66734fdb-beec-4165-b92b-d442ea38c6c9.mp4
+```clojure
+(square-list [1 2 3 4 5])
+```
 
-<br><br><br><br><br><br>
+The result would be a new list [1 4 9 16 25], where each element of the original list has been squared.
 
-### Right-click on the port and check in the browser
+In Clojure, **processes can be represented using higher-order functions** like map, reduce, filter, and others. These functions allow you to express computations in a concise and declarative manner, focusing on the transformation of data rather than the explicit control flow.
 
-https://user-images.githubusercontent.com/10168979/209822293-ae2145f7-bcc5-4066-bfdf-ecd140e26d4d.mp4
+## Reference
 
-**Port number is 8085, not 5900.**
+## Clojure Basics
 
-<br><br><br><br><br><br>
+### SICP Clojure
 
-## Check Codespaces usage
+* [SICP Book PDF](https://web.mit.edu/6.001/6.037/sicp.pdf)
+* [SICP Book](https://lfe.io/books/sicp/ch1/building-abstractions-with-functions.html)
+* [SICP 1.1 Clojure](https://bernhardwenzel.com/articles/sicp-chapter-1-1-in-clojure/)
+* [SICP Distilled](https://www.sicpdistilled.com/)
+* [Why and how to start your SICP trek](https://archive.is/uTOol#selection-839.0-880.0)
 
-https://github.com/codespaces
+## DDD Basics
 
-If you want to get it for free, make sure it's shut down after you use it.  
-Delete useless containers!
+* [Domain-Driven Design in Clojure](https://www.fbeyer.com/posts/clojure-ddd/)
+* [Domain Driven Design (DDD) in Clojure, an example implementation](https://clojureverse.org/t/domain-driven-design-ddd-in-clojure-an-example-implementation/8802/5)
+* [Domain-Driven Design with Clojure](https://www.infoq.com/presentations/DDD-Clojure/)
+* [Data Driven RAD with Malli](https://www.youtube.com/watch?v=ww9yR_rbgQs)
 
-To stop, click on codespeces and stop from the menu
 
-![c](https://user-images.githubusercontent.com/10168979/209823266-8ae47f4e-f86e-44a7-a013-dd480fa6c3ad.png)
+### Calva
 
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
+ALT+Shift+P Calva
+
+### Leinegan
+
+```bash
+lein -h
+```
+
+### Mermaid
+
+I have added the Mermaid Markdown extention to render diagramms in the .md files.
+
+
