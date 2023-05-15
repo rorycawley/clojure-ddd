@@ -22,12 +22,19 @@ nil ; null
 (+ 1 1)
 
 
-; naming a variable, cannot be modified
+; naming a variable, immutable
 (def wife "Penny")
 wife ; "Penny"
 
-; list (their contents cannot be modified)
+; list - ordered collections, immutable
 '(1 2)
 (list 1 2)
 (def my-list '(1 2))
 my-list ; (1 2)
+'(2.3 "hell" 2 :fun 'helo') 
+
+; vector, lists with random index access, immutable
+[1 2]
+(def my-vec [1 2])
+[2.3 "hell" 2 :fun 'helo']
+;; ists, vectors, maps, and sets,

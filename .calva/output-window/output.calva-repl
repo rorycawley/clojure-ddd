@@ -81,3 +81,13 @@ clj꞉clojure-ddd.chap1꞉> 
 clj꞉clojure-ddd.chap1꞉> 
 (1 2)
 clj꞉clojure-ddd.chap1꞉> 
+(2.3 "hell" 2 :fun)
+clj꞉clojure-ddd.chap1꞉> 
+(2.3 "hell" 2 :fun 'helo')
+clj꞉clojure-ddd.chap1꞉> 
+[1 2]
+clj꞉clojure-ddd.chap1꞉> 
+#'clojure-ddd.chap1/my-vec
+clj꞉clojure-ddd.chap1꞉> 
+[2.3 "hell" 2 :fun helo']
+clj꞉clojure-ddd.chap1꞉> 
