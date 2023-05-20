@@ -10,6 +10,9 @@
 
 ;; Composability and separation of concerns: Clojure promotes the composition of functions and the separation of concerns. By breaking down problems into smaller, composable functions, code becomes more modular and easier to understand and test.
 
+; create a new project in clojure
+
+
 ; namespaces are used to group related functions
 ; conventions are:
 ; - namespaces are lowercase
@@ -330,3 +333,41 @@ my-set
 ; You may have noticed that the treatment of data structures so far doesn’t include a description of how to create new types or classes. The reason is that Clojure’s emphasis on simplicity encourages you to reach for the built-in data structures first.
 
 ; If you come from an object-oriented background, you might think that this approach is weird and backward. However, what you’ll find is that your data does not have to be tightly bundled with a class for it to be useful and intelligible.
+
+; abstractions is central to what we do as programmers
+; Clojure is a great language to do abstractions
+; Abstraction is the elimination of the irrelevant and the amplification of the essential.
+
+; a typical class can be implemented as a map
+(def alex
+  {:name "Alex"
+   :last "Miller"
+   :age 30
+   :eye-color "blue"
+   :occupation "Software Engineer"})
+alex
+(alex :last) ; "Miller"
+(:last alex) ; "Miller"
+(:occupation alex) ; "Software Engineer"
+(:occupation alex "Unknown") ; "Software Engineer"
+
+(defrecord Person [name last age eye-color occupation])
+(def alex2 (Person. "Alex" "Miller" 30 "blue" "Software Engineer"))
+alex2
+
+
+; a typical class can be implemented as a protocol
+(defrecord Programmer [language])
+
+(defprotocol Teacher
+           (teach [p])
+  (read [p])
+)
+
+(extend-type Programmer
+  Teacher
+  (teach [p] (println "I am teaching " (:language p)))
+  (read [p] (println "I am reading " (:language p)))
+)
+
+(teach (Programmer. "Clojure")) ; I am teaching Clojure

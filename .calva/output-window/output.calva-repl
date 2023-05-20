@@ -9,7 +9,7 @@
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
-; Using host:port localhost:35377 ...
+; Using host:port localhost:45217 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -35,105 +35,31 @@ nil
 cljs꞉user-activate꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 cljs꞉user-activate꞉> 
-1
+#object[VV chap1.Programmer]
 clj꞉chap1꞉> 
-:free_wifi
+Teacher
 clj꞉chap1꞉> 
-#'chap1/map1
+#object[Jn [object Object]]
 clj꞉chap1꞉> 
-"one"
-clj꞉chap1꞉> 
-"one"
-clj꞉chap1꞉> 
-{"string-key" #object[If]}
-clj꞉chap1꞉> 
-{:age 30, :name "Rory"}
-clj꞉chap1꞉> 
-; Wrong number of args (3) passed to: :rory
-clj꞉chap1꞉> 
-{:rory "50", :penny 49}
-clj꞉chap1꞉> 
-; Could not resolve symbol: foo1
-clj꞉chap1꞉> 
-#'chap1/foo1
-clj꞉chap1꞉> 
-"50"
-clj꞉chap1꞉> 
-30
-clj꞉chap1꞉> 
-{:age 30, :name "Rory"}
-clj꞉chap1꞉> 
-:a
-clj꞉chap1꞉> 
-:34
-clj꞉chap1꞉> 
-:_?
-clj꞉chap1꞉> 
-1
-clj꞉chap1꞉> 
-1
-clj꞉chap1꞉> 
-"unicorns?"
-clj꞉chap1꞉> 
-"Cannot find it"
-clj꞉chap1꞉> 
-2
-clj꞉chap1꞉> 
-2
-clj꞉chap1꞉> 
-{:foo "bar"}
-clj꞉chap1꞉> 
-[1 2 3]
-clj꞉chap1꞉> 
-[1 2 3 4]
-clj꞉chap1꞉> 
-(1 2 3)
-clj꞉chap1꞉> 
-2
-clj꞉chap1꞉> 
-(1 2 3)
-clj꞉chap1꞉> 
-("hello" :bar 3)
-clj꞉chap1꞉> 
-#{1 2 3}
-clj꞉chap1꞉> 
-#{"hello" :bar 3}
-clj꞉chap1꞉> 
-#{1 2 3}
-clj꞉chap1꞉> 
-#{1 2 3 4}
-clj꞉chap1꞉> 
-2
-clj꞉chap1꞉> 
-#{1 2 3}
-clj꞉chap1꞉> 
-#{:a :b}
-clj꞉chap1꞉> 
-#{[:a 1] [:b 2]}
-clj꞉chap1꞉> 
-#{1 2 3}
-clj꞉chap1꞉> 
-#{1 2}
-clj꞉chap1꞉> 
-true
-clj꞉chap1꞉> 
-:a
-clj꞉chap1꞉> 
-true
-clj꞉chap1꞉> 
-false
-clj꞉chap1꞉> 
-:not-found
-clj꞉chap1꞉> 
-:a
-clj꞉chap1꞉> 
+I am teaching  Clojure
 nil
 clj꞉chap1꞉> 
-:a
-clj꞉chap1꞉> 
-nil
-clj꞉chap1꞉> 
-"not found"
-clj꞉chap1꞉> 
-nil
-clj꞉chap1꞉> 
+; Could not find namespace: clojure.spec.alpha.
+clj꞉hackynews.domain꞉> 
+; Could not find namespace: clojure.spec.alpha.
+clj꞉hackynews.domain꞉> 
+; Could not resolve symbol: defproject
+clj꞉user꞉> 
+#'hackynews.core/-main
+clj꞉hackynews.core꞉> 
+; Could not find namespace: clojure.spec.alpha.
+clj꞉hackynews.domain꞉> 
+; Could not find namespace: clojure.spec.alpha.
+clj꞉hackynews.domain꞉> 
+; Jacking in...
+; Connecting using "undefined" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+; Aborting jack-in. No project type selected.
+; nREPL Connection was closed
