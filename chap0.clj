@@ -1,5 +1,26 @@
-; There will always be things we wish to say in our programs that in all known languages can only be said poorly
+; functional programming is a style of programming that emphasizes the evaluation of expressions, rather than execution of commands.
+; Functional programming concerns and facilitates the application and composition of functions.
+; Further, for a language to be considered functional, its notion of function must be first-class.First-class functions can be stored, passed, and returned just like any other piece of data.
 
+; Clojure further supports a style of functional programming that includes such topics as purity, immutability, recursion, laziness, and referential transparency
+
+; Lisp
+; By relieving the brain of all unnecessary work, a good notation sets it free to concentrate on more advanced problems.
+
+; In Clojure, the evaluation ordering is always the same—from innermost to out, left to right
+
+; The mathematical operators in Clojure are also functions.
+
+; If all function calls look the same to Clojure, then it’s easy to call functions with any number of arguments, because the call and its arguments are bound by the parentheses.
+
+; In Clojure, you can use the apply function to send a sequence of numbers to a function as if they were sent as arguments
+
+(def numbers [1 2 3 4 5 6 7 8 9 10])
+(apply + numbers)
+
+; Clojure programs are composed of data structures
+
+; There will always be things we wish to say in our programs that in all known languages can only be said poorly
 
 ; No existing programming language can express precisely those concepts and abstractions needed for your specific application. The only person who can design a language to solve your exact problem is you.
 
@@ -67,3 +88,17 @@
 ; Data and methods bound lexically, instead data objects from functions
 ; Method implementations embedded throughout the class inheritance chain, instead inheritance declarations from function implementations
 
+; It can be hard at times to tease apart these concepts in your mind, but accomplishing it can bring remarkable clarity and a sense of power and flexibility that’s worth the effort. With all these different concepts at your disposal, it’s important that the code and data you work with express this variety in a consistent way.
+
+; Consistency
+; Clojure works to provide consistency in two specific ways: consistency of syntax and of data structures.
+
+; Consistency of syntax is about the similarity in form between related concepts. E.g. for and doseq use the same syntax for input and output - so are easily interchangable and understandable. The value of this similarity is having to learn only one basic syntax for both situations, as well as the ease with which you can convert any particular usage of one form to the other if necessary.
+
+; Likewise, the consistency of data structures is the deliberate design of all of Clojure’s persistent collection types to provide interfaces as similar to each other as possible, as well as to make them as broadly useful as possible. This is an extension of the classic Lisp “code is data” philosophy.
+
+; Clojure data structures aren’t used just for holding large amounts of application data, but also to hold the expression elements of the application itself. They’re used to describe destructuring forms and to provide named options to various built-in functions. Clojure encourages the use of compatible map-like objects.
+
+; The benefit of this is that the same set of functions designed to work with Clojure data structures can be applied to all these contexts: large data stores, application code, and application data objects. You can use into to build any of these types, seq to get a lazy seq to walk through them, filter to select elements of any of them that satisfy a particular predicate, and so on.
+
+; Simplicity, freedom to focus, empowerment, consistency, and clarity—nearly every element of the Clojure programming language is designed to promote these goals.

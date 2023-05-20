@@ -9,7 +9,7 @@
 ; You can make Calva auto-select this.
 ;   - See https://calva.io/connect-sequences/
 ; 
-; Using host:port localhost:45217 ...
+; Using host:port localhost:36881 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; TIPS:
@@ -35,31 +35,7 @@ nil
 cljs꞉user-activate꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 cljs꞉user-activate꞉> 
-#object[VV chap1.Programmer]
-clj꞉chap1꞉> 
-Teacher
-clj꞉chap1꞉> 
-#object[Jn [object Object]]
-clj꞉chap1꞉> 
-I am teaching  Clojure
-nil
-clj꞉chap1꞉> 
-; Could not find namespace: clojure.spec.alpha.
-clj꞉hackynews.domain꞉> 
-; Could not find namespace: clojure.spec.alpha.
-clj꞉hackynews.domain꞉> 
-; Could not resolve symbol: defproject
+#'user/numbers
 clj꞉user꞉> 
-#'hackynews.core/-main
-clj꞉hackynews.core꞉> 
-; Could not find namespace: clojure.spec.alpha.
-clj꞉hackynews.domain꞉> 
-; Could not find namespace: clojure.spec.alpha.
-clj꞉hackynews.domain꞉> 
-; Jacking in...
-; Connecting using "undefined" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-; Aborting jack-in. No project type selected.
-; nREPL Connection was closed
+55
+clj꞉user꞉> 
